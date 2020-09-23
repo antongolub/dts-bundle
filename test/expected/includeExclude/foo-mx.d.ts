@@ -22,14 +22,15 @@ declare module 'foo-mx/index//external2' {
 
 declare module 'foo-mx/Foo' {
     class Foo {
-            foo: string;
-            constructor(secret?: string);
-            /**
-                * Bars the foo.
-                */
-            barFoo(): void;
-            /** Foos the baz. */
-            fooBaz(): void;
+        foo: string;
+        constructor(secret?: string);
+        /**
+          * Bars the foo.
+          */
+        barFoo(): void;
+        /** Foos the baz. */
+        fooBaz(): void;
     }
     export = Foo;
 }
+

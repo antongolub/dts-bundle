@@ -12,14 +12,15 @@ declare module 'foo-mx' {
 
 declare module 'foo-mx/Foo' {
     class Foo {
-            foo: string;
-            constructor(secret?: string);
-            /**
-                * Bars the foo.
-                */
-            barFoo(): void;
-            /** Foos the baz. */
-            fooBaz(): void;
+        foo: string;
+        constructor(secret?: string);
+        /**
+          * Bars the foo.
+          */
+        barFoo(): void;
+        /** Foos the baz. */
+        fooBaz(): void;
     }
     export = Foo;
 }
+

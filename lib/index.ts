@@ -613,7 +613,7 @@ export function bundle(options: Options): BundleResult {
             file = path.join(file, 'index.d.ts');
         }
         const code = fs.readFileSync(file, { encoding: 'utf8' }).replace(bomOptExp, '').replace(/\s*$/, '');
-        res.indent = detectIndent(code) || indent;
+        res.indent = (detectIndent(code) || indent) as string;
 
         // buffer multi-line comments, handle JSDoc
         let multiComment: string[] = [];
