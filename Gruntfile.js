@@ -2,7 +2,7 @@ module.exports = function (grunt) {
 	'use strict';
 
 	grunt.loadNpmTasks('grunt-ts');
-	grunt.loadNpmTasks('grunt-mocha-test');
+	grunt.loadNpmTasks('grunt-mocha-cli');
 	grunt.loadNpmTasks('grunt-contrib-clean');
 
 	grunt.initConfig({
@@ -73,14 +73,12 @@ module.exports = function (grunt) {
 				outDir: 'test/build/ambient'
 			}
 		},
-		mochaTest: {
+		mochacli: {
 			options: {
 				timeout: 5000,
 				reporter: 'mocha-unfunk-reporter'
 			},
-			all: {
-				src: 'test/test.js'
-			}
+			all: ['test/test.js']
 		}
 	});
 
@@ -103,14 +101,14 @@ module.exports = function (grunt) {
 	grunt.registerTask('run', [
 		'clean:tmp',
 		'ts:main',
-		'mochaTest:all',
+		'mochacli',
 		'sweep'
 	]);
 
 	grunt.registerTask('prepublish', [
 		'build',
 		'ts:test',
-		'mochaTest:all',
+		'mochacli',
 		'sweep'
 	]);
 
