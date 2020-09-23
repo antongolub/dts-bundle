@@ -1,6 +1,6 @@
 {
-  "name": "@arshaw/dts-bundle",
-  "version": "0.7.3",
+  "name": "@antongolub/dts-bundle",
+  "version": "0.7.4-beta.0",
   "description": "Export TypeScript .d.ts files as an external module definition",
   "keywords": [
     "typescript",
@@ -12,10 +12,10 @@
   "bin": {
     "dts-bundle": "./lib/dts-bundle.js"
   },
-  "homepage": "https://github.com/grunt-ts/dts-bundle",
+  "homepage": "https://github.com/antongolub/dts-bundle",
   "repository": {
     "type": "git",
-    "url": "https://github.com/grunt-ts/dts-bundle.git"
+    "url": "https://github.com/antongolub/dts-bundle.git"
   },
   "author": {
     "name": "Bart van der Schoor",
@@ -24,11 +24,11 @@
   "licenses": [
     {
       "type": "MIT",
-      "url": "https://raw.github.com/grunt-ts/dts-bundle/master/LICENSE-MIT.txt"
+      "url": "https://raw.github.com/antongolub/dts-bundle/master/LICENSE-MIT.txt"
     }
   ],
   "bugs": {
-    "url": "https://github.com/grunt-ts/dts-bundle/issues"
+    "url": "https://github.com/antongolub/dts-bundle/issues"
   },
   "engines": {
     "node": ">= 0.10.0"
