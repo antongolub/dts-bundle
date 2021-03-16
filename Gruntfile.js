@@ -76,7 +76,7 @@ module.exports = function (grunt) {
 		mochacli: {
 			options: {
 				timeout: 5000,
-				reporter: 'mocha-unfunk-reporter'
+				reporter: 'spec' // mocha-unfunk-reporter
 			},
 			all: ['test/test.js']
 		}
